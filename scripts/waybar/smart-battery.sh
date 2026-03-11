@@ -8,14 +8,18 @@ while true; do
     empty=$((10 - filled))
 
     bar_filled=$(seq 1 $filled | xargs printf '▰%.0s')
-    bar_empty=$(seq 1 $empty | xargs printf '▱%.0s')
+    if [ $empty = 0 ]; then
+        bar_empty=''
+    else
+        bar_empty=$(seq 1 $empty | xargs printf '▱%.0s')
+    fi
 
     bar="$bar_filled$bar_empty"
 
     if [ $state = 'Charging' ]; then
-        charging_icon='⚡'
+        charging_icon='󱐋'
     else
-        charging_icon=''
+        charging_icon=' '
     fi
 
     if [ $percentage -ge 95 ]; then
@@ -28,7 +32,7 @@ while true; do
         class='critical'
     fi
 
-    echo "{\"text\":\"$bar $percentage%$charging_icon\",\"class\":\"$class\"}"
+    echo "{\"text\":\"$bar $percentage% $charging_icon\",\"class\":\"$class\"}"
 
     case "$class" in
         'full'|'normal') sleep 60 ;;
