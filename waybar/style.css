@@ -101,6 +101,14 @@ window#waybar {
     border-radius: 4px;
 }
 
+#custom-battery.charging {
+    color: #00FFC8;
+    background: rgba(0, 255, 200, 0.15);
+    border-radius: 4px;
+    animation: none;
+}
+
+
 @keyframes critical-pulse {
     0% { 
         background: rgba(255, 0, 0, 0.2);
