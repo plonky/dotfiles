@@ -1,0 +1,2 @@
+ACTION=="change", SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_NAME}=="BAT1", RUN+="/home/plonky/.config/waybar/scripts/battery-trigger.sh"
+
