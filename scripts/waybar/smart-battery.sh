@@ -8,6 +8,8 @@ FULLSLEEP=60
 WARNINGSLEEP=30
 CRITICALSLEEP=5
 
+trap ':' SIGUSR1
+
 while true; do
     percentage=$(cat /sys/class/power_supply/BAT1/capacity)
     state=$(cat /sys/class/power_supply/BAT1/status)
@@ -62,9 +64,12 @@ while true; do
 
 
     case "$class" in
-        *'full'*|*'normal'*) sleep $FULLSLEEP ;;
-        *'warning'*) sleep $WARNINGSLEEP ;;
-        *'critical'*) sleep $CRITICALSLEEP ;;
+        *'full'*|*'normal'*) sleep $FULLSLEEP &
+            wait $! ;;
+        *'warning'*) sleep $WARNINGSLEEP &
+            wait $! ;;
+        *'critical'*) sleep $CRITICALSLEEP &
+            wait $! ;;
     esac
 
 done
