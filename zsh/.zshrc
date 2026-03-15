@@ -53,9 +53,6 @@ alias ll='eza -la'
 alias cat='bat'
 alias grep='grep --color=auto'
 
-# System
-alias sleepy='sleep 5 && systemctl suspend'
-
 # Camera
 alias cameraIR='ffplay /dev/video2'
 
