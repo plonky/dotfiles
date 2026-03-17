@@ -1,11 +1,11 @@
 [Unit]
 Description=A service to start the hyprsunset filter
-After=graphical-session.target
-PartOf=graphical-session.target
+After=hyprland-session.target
+PartOf=hyprland-session.target
 
 [Service]
 Type=simple
 ExecStart=hyprsunset
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=hyprland-session.target

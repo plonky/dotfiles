@@ -24,6 +24,7 @@ return {
           "cssls",                        -- CSS (optional)
           "ts_ls",                        -- TypeScript/JavaScript
           "kotlin_language_server",       -- Kotlin
+          "rust_analyzer",                -- Rust
         },
         automatic_installation = true,
       })

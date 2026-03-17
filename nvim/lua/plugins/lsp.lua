@@ -33,6 +33,7 @@ return {
     vim.lsp.enable('cssls')
     vim.lsp.enable('ts_ls')
     vim.lsp.enable('kotlin_language_server')
+    vim.lsp.enable('rust_analyzer')
 
     -- Keybinds
     vim.keymap.set('n', '<leader>cr', vim.lsp.buf.rename, { desc = "Rename symbol" })
