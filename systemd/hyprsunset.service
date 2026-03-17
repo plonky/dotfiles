@@ -1,0 +1,11 @@
+[Unit]
+Description=A service to start the hyprsunset filter
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=hyprsunset
+
+[Install]
+WantedBy=graphical-session.target
