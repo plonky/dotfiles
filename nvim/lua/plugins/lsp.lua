@@ -12,6 +12,8 @@ return {
     vim.lsp.config.html = { capabilities = capabilities }
     vim.lsp.config.cssls = { capabilities = capabilities }
     vim.lsp.config.ts_ls = { capabilities = capabilities }
+    vim.lsp.config.rust_analyzer = { capabilities = capabilities }
+    vim.lsp.config.bashls = { capabilities = capabilities }
     vim.lsp.config.kotlin_language_server = {
       capabilities = capabilities,
       -- This tells the LSP where the project starts so it can find the classpath
@@ -34,6 +36,7 @@ return {
     vim.lsp.enable('ts_ls')
     vim.lsp.enable('kotlin_language_server')
     vim.lsp.enable('rust_analyzer')
+    vim.lsp.enable('bashls')
 
     -- Keybinds
     vim.keymap.set('n', '<leader>cr', vim.lsp.buf.rename, { desc = "Rename symbol" })

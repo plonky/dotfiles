@@ -25,6 +25,7 @@ return {
           "ts_ls",                        -- TypeScript/JavaScript
           "kotlin_language_server",       -- Kotlin
           "rust_analyzer",                -- Rust
+          "bashls",                       -- Bash
         },
         automatic_installation = true,
       })
