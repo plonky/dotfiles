@@ -45,3 +45,4 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- Auto jump to last line

@@ -121,3 +121,6 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 # ============================================================================
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Created by `pipx` on 2026-04-07 16:23:04
+export PATH="$PATH:/home/plonky/.local/bin"
