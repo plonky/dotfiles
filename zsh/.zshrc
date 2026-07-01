@@ -6,7 +6,6 @@
 # ENVIRONMENT VARIABLES
 # ============================================================================
 export MANPAGER="nvim +Man!"
-export LDLIBS=-lcs50
 
 # ============================================================================
 # ZSH OPTIONS
@@ -115,6 +114,16 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
+
+# Npm
+export PATH="/usr/local/bin:$PATH"
+
+# Go
+export GO_HOME="$HOME/go"
+export PATH="$PATH:$GO_HOME/bin"
+
+# Bin for scripts
+export PATH=$PATH:~/bin
 
 # ============================================================================
 # PLUGINS (must be at end)

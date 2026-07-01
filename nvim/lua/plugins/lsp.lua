@@ -28,6 +28,7 @@ return {
         },
       },
     }
+    vim.lsp.config.lua_ls = { capabilities = capabilities }
     -- Enable all servers
     vim.lsp.enable('clangd')
     vim.lsp.enable('pyright')
@@ -37,6 +38,7 @@ return {
     vim.lsp.enable('kotlin_language_server')
     vim.lsp.enable('rust_analyzer')
     vim.lsp.enable('bashls')
+    vim.lsp.enable('lua_ls')
 
     -- Keybinds
     vim.keymap.set('n', '<leader>cr', vim.lsp.buf.rename, { desc = "Rename symbol" })

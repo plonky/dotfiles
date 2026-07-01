@@ -4,6 +4,12 @@ return {
   opts = {
     -- add any options here
     lsp = {
+      -- fidget.nvim already handles LSP progress notifications; leaving
+      -- both on double-renders every progress message (e.g. pyright's
+      -- empty-title spam, see fidget.lua).
+      progress = {
+        enabled = false,
+      },
       override = {
         ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
         ["vim.lsp.util.stylize_markdown"] = true,

@@ -3,3 +3,5 @@ tmux/plugins/
 nvim/lazy-lock.json
 *.log
 *.swp
+CLAUDE.md
+AUDIT.md

@@ -1,6 +1,11 @@
--- Sets Space as leader
-vim.g.mapleader = " "
 require("config.lazy")
+
+-- Syntax Highlighting
+vim.api.nvim_create_autocmd('FileType', {
+  callback = function()
+    pcall(vim.treesitter.start)
+  end,
+})
 
 -- General indention settings
 vim.opt.expandtab = true      -- Use spaces instead of tabs

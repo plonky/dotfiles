@@ -23,9 +23,10 @@ return {
           "html",                         -- HTML
           "cssls",                        -- CSS (optional)
           "ts_ls",                        -- TypeScript/JavaScript
-          "kotlin_language_server",       -- Kotlin
           "rust_analyzer",                -- Rust
           "bashls",                       -- Bash
+          "kotlin_language_server",       -- Kotlin
+          "lua_ls",                       -- Lua
         },
         automatic_installation = true,
       })
