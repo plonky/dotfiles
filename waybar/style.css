@@ -1,5 +1,5 @@
 * {
-    font-family: "Fira Code", "JetBrains Mono", monospace;
+    font-family: "Fira Code", "Hack Nerd Font Mono", monospace;
     font-size: 14px;
     font-weight: 600;
 }
@@ -40,6 +40,7 @@ window#waybar {
 
 /* Custom battery */
 #custom-battery {
+    font-family: "Adwaita Mono", monospace;
     padding: 6px 16px;
     min-width: 40px;
     color: #FF0055;

@@ -74,8 +74,8 @@
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "  {volume}%",
-        "format-icons": ["", "", ""],
+        "format-muted": "󰖁  {volume}%",
+        "format-icons": ["󰕿", "󰖀", "󰕾"],
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     },
 
